@@ -10,6 +10,8 @@
 		<link href="../css/style.css" rel="stylesheet" type="text/css">
 		<title>Jakub Szulgit|Home</title>
 	</head>
+
+	<body>
 		<div class="container-navbar">
 			<div class="navbar">
 				<div class="left-side-wrapper">
@@ -41,11 +43,15 @@
 
 				<div class="portfolio-item-content-wrapper">
 					<div class="portfolio-item-logo">
-						<img src="../img/logos/logo1.png" style="width: 80%;">
+						<a href="https://www.codewars.com/users/lucek3332">
+							<img src="../img/logos/logo1.png" style="width: 80%;">
+						</a>
 					</div>
 
 					<div class="portfolio-item-description">
-						<p>Ponad 300 zadań z pythona oraz blisko 100 zadań z SQL o różnym poziomie trudności.</p>
+						<a href="https://www.codewars.com/users/lucek3332">
+							<p>Ponad 300 zadań z pythona oraz blisko 100 zadań z SQL o różnym poziomie trudności.</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -56,11 +62,15 @@
 
 				<div class="portfolio-item-content-wrapper">
 					<div class="portfolio-item-logo">
-						<img src="../img/logos/logo2.png" style="width: 30%;"">
+						<a href="https://github.com/lucek3332/prosiak-pygame">
+							<img src="../img/logos/logo2.png" style="width: 30%;">
+						</a>
 					</div>
 
 					<div class="portfolio-item-description">
-						<p>Zbieraj jabłka i uciekaj przed goniącymi wilkami w emocjonującej grze napisanej w Python/Pygame.</p>
+						<a href="https://github.com/lucek3332/prosiak-pygame">
+							<p>Zbieraj jabłka i uciekaj przed goniącymi wilkami w emocjonującej grze napisanej w Python/Pygame.</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -71,11 +81,15 @@
 
 				<div class="portfolio-item-content-wrapper">
 					<div class="portfolio-item-logo">
-						<img src="../img/logos/logo3.png">
+						<a href="https://github.com/lucek3332/battleship">
+							<img src="../img/logos/logo3.png">
+						</a>
 					</div>
 
 					<div class="portfolio-item-description">
-						<p>Klasyczna gra w statki. Poczuj się jak prawdziwy pirat!</p>
+						<a href="https://github.com/lucek3332/battleship">
+							<p>Klasyczna gra w statki. Poczuj się jak prawdziwy pirat!</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -86,11 +100,15 @@
 
 				<div class="portfolio-item-content-wrapper">
 					<div class="portfolio-item-logo">
-						<img src="../img/logos/logo4.png">
+						<a href="https://github.com/lucek3332/bridge-pygame">
+							<img src="../img/logos/logo4.png">
+						</a>
 					</div>
 
 					<div class="portfolio-item-description">
-						<p>Gra karciana online dla wielu graczy.</p>
+						<a href="https://github.com/lucek3332/bridge-pygame">
+							<p>Gra karciana online dla wielu graczy.</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -101,11 +119,15 @@
 
 				<div class="portfolio-item-content-wrapper">
 					<div class="portfolio-item-logo">
-						<img src="../img/logos/logo5.png">
+						<a href="https://github.com/lucek3332/bridge-django">
+							<img src="../img/logos/logo5.png">
+						</a>
 					</div>
 
 					<div class="portfolio-item-description">
-						<p>Platforma do gry w brydża napisana przy pomocy Django.</p>
+						<a href="https://github.com/lucek3332/bridge-django">
+							<p>Platforma do gry w brydża napisana przy pomocy Django.</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -116,15 +138,37 @@
 
 				<div class="portfolio-item-content-wrapper">
 					<div class="portfolio-item-logo">
-						<img src="../img/logos/logo6.png">
+						<a href="#">
+							<img src="../img/logos/logo6.png">
+						</a>
 					</div>
 
 					<div class="portfolio-item-description">
-						<p>Strona internetowa z przepisami - w trakcie.</p>
+						<a href="#">
+							<p>Strona internetowa z przepisami - w trakcie.</p>
+						</a>
 					</div>
 				</div>
 			</div>
-		</div>
-	<body>
+		</div>	
 	</body>
+
+
+	<script>
+
+		const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+		portfolioItems.forEach(portfolioItem => {
+			portfolioItem.addEventListener('mouseover', () => {
+				console.log(portfolioItem.childNodes[1].classList);
+				portfolioItem.childNodes[1].classList.add('img-darken');
+			})
+
+			portfolioItem.addEventListener('mouseout', () => {
+				console.log(portfolioItem.childNodes[1].classList);
+				portfolioItem.childNodes[1].classList.remove('img-darken');
+			})
+		})
+
+	</script>
 </html>

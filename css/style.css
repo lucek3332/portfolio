@@ -113,12 +113,17 @@ a:active {
 	font-family: "Roboto", sans-serif;
 }
 
-.portfolio-item-content-wrapper:hover .portfolio-item-description {	
+.portfolio-item-wrapper:hover .portfolio-item-description {	
 	font-size: 18px;
 	color: #25e8c8;
 	transition: 1s;
 	font-weight: bold;
 	font-family: "Roboto", sans-serif;
+}
+
+.img-darken {
+	transition: 1s;
+	filter: brightness(0.1);
 }
 
 /* About me */
