@@ -83,3 +83,42 @@ a:active {
 	background-position: center;
 	background-size: cover;
 }
+
+.portfolio-item-wrapper {
+	position: relative;
+}
+
+.portfolio-item-content-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: absolute;	
+	top: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+	height: 100%;
+}
+
+.portfolio-item-logo img{
+	width: 50%;
+	height: auto;
+}
+
+.portfolio-item-description {	
+	font-size: 18px;
+	color: transparent;
+	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+}
+
+.portfolio-item-content-wrapper:hover .portfolio-item-description {	
+	font-size: 18px;
+	color: #25e8c8;
+	transition: 1s;
+	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+}
+
+/* About me */
