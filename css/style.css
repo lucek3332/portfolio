@@ -134,6 +134,10 @@ a:active {
 	grid-column-gap: 80px;
 }
 
+.about-photo img{
+	width: 100%;
+}
+
 .about-content-wrapper {
 	margin-right: 50px;
 }
@@ -168,4 +172,63 @@ a:active {
 #colored {
 	color: #25e8c8; 
 	font-weight: bold;
+}
+
+/* Mobile devices */
+
+@media only screen and (max-width: 768px) {
+	.container-projects {
+		grid-template-columns: 1fr;
+	}
+
+	.navbar {
+		max-height: 120px;
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+	.left-side-wrapper {
+		padding: 20px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
+		justify-items: center;
+	}
+
+	.left-side-item {
+		text-align: center;
+		margin: 0px;
+	}
+
+	.right-side-wrapper {
+		padding: 0 0 20px 0;
+		margin: 0px;
+	}
+
+	.portfolio-item-background {
+		height: 300px;
+	}
+
+	.container-about {
+		grid-template-columns: 1fr;
+	}
+
+	.header-about {
+		text-align: center;
+	}
+
+	.about-content p {
+		margin-left: 18px;
+		margin-right: 18px;
+		text-align: justify;
+	}
+
+	.about-content-wrapper {
+		margin: 0px;
+	}
+
+	.about-photo img {
+		margin-bottom: 10px;
+	}
 }
