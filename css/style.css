@@ -127,3 +127,45 @@ a:active {
 }
 
 /* About me */
+
+.container-about {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 80px;
+}
+
+.about-content-wrapper {
+	margin-right: 50px;
+}
+
+.header-about {
+	font-family: "Roboto", sans-serif;
+	color: #25e8c8;	
+}
+
+.header-about h1 {
+	margin: 0;
+}
+
+.about-content {
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+}
+
+.about-content ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.about-content ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #25e8c8; 
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+#colored {
+	color: #25e8c8; 
+	font-weight: bold;
+}
